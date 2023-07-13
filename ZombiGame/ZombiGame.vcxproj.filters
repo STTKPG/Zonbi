@@ -29,6 +29,12 @@
     <ClCompile Include="Sources\Object\Object2DBase.cpp">
       <Filter>Source\Object</Filter>
     </ClCompile>
+    <ClCompile Include="Sources\Object\ObjectManager.cpp">
+      <Filter>Source\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Object\TextBase.cpp">
+      <Filter>Source\Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\Scene\SceneBase.h">
@@ -48,6 +54,12 @@
     </ClInclude>
     <ClInclude Include="Sources\Others\Position2D.h">
       <Filter>Source\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Object\ObjectFactory.h">
+      <Filter>Source\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Object\TextBase.h">
+      <Filter>Source\Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

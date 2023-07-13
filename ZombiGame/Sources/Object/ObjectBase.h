@@ -4,6 +4,11 @@
 class ObjectBase
 {
 public:
+	enum class ObjectKind
+	{
+		GoDeepLogo
+	};
+public:
 	ObjectBase(){}
 	~ObjectBase(){}
 
