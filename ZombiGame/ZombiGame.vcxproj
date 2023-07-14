@@ -143,6 +143,7 @@
     <ClCompile Include="Sources\Object\Object2DBase.cpp" />
     <ClCompile Include="Sources\Object\ObjectManager.cpp" />
     <ClCompile Include="Sources\Object\TextBase.cpp" />
+    <ClCompile Include="Sources\Others\GraphManager.cpp" />
     <ClCompile Include="Sources\Scene\Title.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -150,7 +151,10 @@
     <ClInclude Include="Sources\Object\Object2DBase.h" />
     <ClInclude Include="Sources\Object\ObjectBase.h" />
     <ClInclude Include="Sources\Object\ObjectFactory.h" />
+    <ClInclude Include="Sources\Object\ObjectManager.h" />
     <ClInclude Include="Sources\Object\TextBase.h" />
+    <ClInclude Include="Sources\Others\GraphManager.h" />
+    <ClInclude Include="Sources\Others\ModelManager.h" />
     <ClInclude Include="Sources\Others\Position2D.h" />
     <ClInclude Include="Sources\Scene\SceneBase.h" />
     <ClInclude Include="Sources\Scene\Title.h" />

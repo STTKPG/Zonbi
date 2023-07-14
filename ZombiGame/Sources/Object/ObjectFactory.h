@@ -1,25 +1,30 @@
 #ifndef OBJECTFACTORY_H
 #define OBJECTFACTORY_H
 
-#include "ObjectBase.h"
 #include "GoDeepLogo.h"
+
 class ObjectFactory
 {
 public:
-	static auto* CreateObject(ObjectBase::ObjectKind kind)
+	ObjectFactory* Instance()
+	{
+		static ObjectFactory instance;
+		return &instance;
+	}
+protected:
+	Object2DBase* CreateObject2D(ObjectBase::ObjectKind kind, Position2D top, Position2D under)
 	{
 		switch (kind)
 		{
-		case ObjectBase::ObjectKind::GoDeepLogo:
-			return new GoDeepLogo(300,);
-			break;
-
-		default:
+		case::ObjectBase::ObjectKind::GoDeepLogo:
+			return new GoDeepLogo(top, under);
 			break;
 		}
+		return nullptr;
 	}
-private:
-	Object2DBase*
+
+	
+
 public:
 	~ObjectFactory(){}
 

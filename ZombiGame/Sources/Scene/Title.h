@@ -2,11 +2,14 @@
 #define TITLE_H
 
 #include "SceneBase.h"
-
+#include "../"
 class Title : public SceneBase
 {
 public:
-	Title(){}
+	Title()
+	{
+		
+	}
 	~Title(){}
 
 protected:
