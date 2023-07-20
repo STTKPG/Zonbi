@@ -15,7 +15,7 @@ public:
 	}
 public:
 	~GraphManager(){}
-protected:
+	public:
 	void Entry(std::string graphname, ObjectBase::ObjectKind kind);
 	int SetGraphData(ObjectBase::ObjectKind kind);
 	void DeleteGraphData(ObjectBase::ObjectKind kind);

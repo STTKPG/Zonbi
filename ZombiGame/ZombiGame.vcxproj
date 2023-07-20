@@ -140,23 +140,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Main.cpp" />
-    <ClCompile Include="Sources\Object\Object2DBase.cpp" />
+    <ClCompile Include="Sources\Object\GoDeepLogo.cpp" />
+    <ClCompile Include="Sources\Object\ObjectBaseGraph.cpp" />
     <ClCompile Include="Sources\Object\ObjectManager.cpp" />
-    <ClCompile Include="Sources\Object\TextBase.cpp" />
     <ClCompile Include="Sources\Others\GraphManager.cpp" />
+    <ClCompile Include="Sources\Scene\SceneBase.cpp" />
+    <ClCompile Include="Sources\Scene\SceneManager.cpp" />
     <ClCompile Include="Sources\Scene\Title.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\Object\GoDeepLogo.h" />
-    <ClInclude Include="Sources\Object\Object2DBase.h" />
     <ClInclude Include="Sources\Object\ObjectBase.h" />
+    <ClInclude Include="Sources\Object\ObjectBaseGraph.h" />
     <ClInclude Include="Sources\Object\ObjectFactory.h" />
     <ClInclude Include="Sources\Object\ObjectManager.h" />
-    <ClInclude Include="Sources\Object\TextBase.h" />
     <ClInclude Include="Sources\Others\GraphManager.h" />
     <ClInclude Include="Sources\Others\ModelManager.h" />
     <ClInclude Include="Sources\Others\Position2D.h" />
     <ClInclude Include="Sources\Scene\SceneBase.h" />
+    <ClInclude Include="Sources\Scene\SceneFactory.h" />
+    <ClInclude Include="Sources\Scene\SceneManager.h" />
     <ClInclude Include="Sources\Scene\Title.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

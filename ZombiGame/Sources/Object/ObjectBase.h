@@ -8,13 +8,18 @@ public:
 	{
 		GoDeepLogo
 	};
+
 public:
-	ObjectBase(){}
+	ObjectBase(ObjectKind kind) : 
+	Kind(kind){}
 	~ObjectBase(){}
 
 public:
 	virtual void Update() = 0;
-	virtual void Draw(int handle) = 0;
+	virtual void Draw() = 0;
+
+public:
+	ObjectKind Kind;
 };
 
 #endif // !OBJECTBASE_H

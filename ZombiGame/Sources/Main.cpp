@@ -1,4 +1,5 @@
 #include "DxLib.h"
+#include "Scene/SceneManager.h"
 
 // プログラムは WinMain から始まります
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
@@ -8,9 +9,17 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		return -1;			// エラーが起きたら直ちに終了
 	}
 
-	DrawPixel(320, 240, GetColor(255, 255, 255));	// 点を打つ
 
-	WaitKey();				// キー入力待ち
+	while (CheckHitKeyAll() == 0 || ProcessMessage() == -1)
+	{
+		SceneManager::Instance()->SceneEntry();
+
+		SceneBase::SceneKind Current = SceneManager::Instance()->SceneUpdate();
+
+		SceneManager::Instance()->SceneDraw();
+
+		SceneManager::Instance()->SceneDelete(Current);
+	}
 
 	DxLib_End();				// ＤＸライブラリ使用の終了処理
 

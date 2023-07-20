@@ -6,21 +6,16 @@
 class ObjectManager
 {
 public:
-	ObjectManager* Instance()
+	static ObjectManager* Instance()
 	{
+		ObjectManager instance;
 		return &instance;
 	}
-	void Entry(ObjectBase::ObjectKind kind)
-	{
-		
-	}
-	void Update()
-	{
-		for (ObjectBase* Obj : Objects)
-		{
-			Obj->Update();
-		}
-	}
+
+	void Entry(ObjectBase::ObjectKind kind, Position2D top = Position2D(0,0),Position2D under = Position2D(0,0));
+	void Update();
+	void Draw();
+	void Delete();
 public:
 	~ObjectManager() {}
 
@@ -28,7 +23,6 @@ public:
 private:
 	ObjectManager() {}
 	ObjectManager(const ObjectManager& ins) = delete;
-	static ObjectManager instance;
 
 private:
 	std::list<ObjectBase*> Objects;

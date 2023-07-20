@@ -26,17 +26,23 @@
     <ClCompile Include="Sources\Scene\Title.cpp">
       <Filter>Source\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Object\Object2DBase.cpp">
-      <Filter>Source\Object</Filter>
-    </ClCompile>
     <ClCompile Include="Sources\Object\ObjectManager.cpp">
-      <Filter>Source\Object</Filter>
-    </ClCompile>
-    <ClCompile Include="Sources\Object\TextBase.cpp">
       <Filter>Source\Object</Filter>
     </ClCompile>
     <ClCompile Include="Sources\Others\GraphManager.cpp">
       <Filter>Source\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Scene\SceneBase.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Scene\SceneManager.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Object\GoDeepLogo.cpp">
+      <Filter>Source\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Object\ObjectBaseGraph.cpp">
+      <Filter>Source\Object</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -52,16 +58,10 @@
     <ClInclude Include="Sources\Object\GoDeepLogo.h">
       <Filter>Source\Object</Filter>
     </ClInclude>
-    <ClInclude Include="Sources\Object\Object2DBase.h">
-      <Filter>Source\Object</Filter>
-    </ClInclude>
     <ClInclude Include="Sources\Others\Position2D.h">
       <Filter>Source\Others</Filter>
     </ClInclude>
     <ClInclude Include="Sources\Object\ObjectFactory.h">
-      <Filter>Source\Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Sources\Object\TextBase.h">
       <Filter>Source\Object</Filter>
     </ClInclude>
     <ClInclude Include="Sources\Object\ObjectManager.h">
@@ -72,6 +72,15 @@
     </ClInclude>
     <ClInclude Include="Sources\Others\GraphManager.h">
       <Filter>Source\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Scene\SceneManager.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Scene\SceneFactory.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Object\ObjectBaseGraph.h">
+      <Filter>Source\Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

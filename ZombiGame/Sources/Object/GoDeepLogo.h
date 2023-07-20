@@ -1,17 +1,16 @@
 #ifndef GODEEPLOGO_H
 #define GODEEPLOGO_H
 
-#include "Object2DBase.h"
+#include "ObjectBaseGraph.h"
 
-class GoDeepLogo : public Object2DBase
+class GoDeepLogo : public ObjectBaseGraph 
 {
 public:
-	GoDeepLogo(Position2D top,Position2D under) : Object2DBase(top,under){}
+	GoDeepLogo(Position2D top,Position2D under,ObjectKind kind) : ObjectBaseGraph(kind,top,under){}
 	~GoDeepLogo(){}
 
 protected:
 	void Update();
-	void Draw(int handle);
 
 };
 
