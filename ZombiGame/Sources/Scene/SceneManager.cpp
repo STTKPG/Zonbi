@@ -6,6 +6,7 @@ void SceneManager::SceneEntry()
 	if (Scene == nullptr)
 	{
 		Scene = SceneFactory::SceneCreate(CurrentSceneKind);
+
 	}
 }
 

@@ -8,7 +8,7 @@ class SceneManager
 public:
 	static SceneManager* Instance()
 	{
-		SceneManager instance;
+		static SceneManager instance;
 		return &instance;
 	}
 public:
@@ -21,7 +21,7 @@ public:
 	void SceneDelete(SceneBase::SceneKind kind);
 
 private:
-	SceneManager() {}
+	SceneManager():CurrentSceneKind(SceneBase::SceneKind::Test){}
 	SceneManager(const SceneManager &ins) = delete;
 
 private:

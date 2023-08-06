@@ -18,6 +18,9 @@
     <Filter Include="Source\Others">
       <UniqueIdentifier>{4f3080f5-66ee-4e15-9c0e-6791f5757a50}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Camera">
+      <UniqueIdentifier>{bfdf5a1b-ac11-44f4-b3c5-5543ede57a63}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Main.cpp">
@@ -38,11 +41,26 @@
     <ClCompile Include="Sources\Scene\SceneManager.cpp">
       <Filter>Source\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Object\GoDeepLogo.cpp">
+    <ClCompile Include="Sources\Object\Player.cpp">
       <Filter>Source\Object</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Object\ObjectBaseGraph.cpp">
+    <ClCompile Include="Sources\Object\Object3DBase.cpp">
       <Filter>Source\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Others\ModelManager.cpp">
+      <Filter>Source\Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Scene\TestScene.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Object\ObjectFactory.cpp">
+      <Filter>Source\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Camera\CameraManager.cpp">
+      <Filter>Source\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Camera\Camera.cpp">
+      <Filter>Source\Camera</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -55,14 +73,8 @@
     <ClInclude Include="Sources\Object\ObjectBase.h">
       <Filter>Source\Object</Filter>
     </ClInclude>
-    <ClInclude Include="Sources\Object\GoDeepLogo.h">
-      <Filter>Source\Object</Filter>
-    </ClInclude>
     <ClInclude Include="Sources\Others\Position2D.h">
       <Filter>Source\Others</Filter>
-    </ClInclude>
-    <ClInclude Include="Sources\Object\ObjectFactory.h">
-      <Filter>Source\Object</Filter>
     </ClInclude>
     <ClInclude Include="Sources\Object\ObjectManager.h">
       <Filter>Source\Object</Filter>
@@ -79,8 +91,29 @@
     <ClInclude Include="Sources\Scene\SceneFactory.h">
       <Filter>Source\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Sources\Object\ObjectBaseGraph.h">
+    <ClInclude Include="Sources\Object\ObjectFactory.h">
       <Filter>Source\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Object\Player.h">
+      <Filter>Source\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Object\Object3DBase.h">
+      <Filter>Source\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Scene\TestScene.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Others\Vector.h">
+      <Filter>Source\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Camera\CameraManager.h">
+      <Filter>Source\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Camera\Camera.h">
+      <Filter>Source\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Camera\CameraFactory.h">
+      <Filter>Source\Camera</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

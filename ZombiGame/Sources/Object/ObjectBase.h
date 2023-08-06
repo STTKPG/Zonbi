@@ -6,7 +6,8 @@ class ObjectBase
 public:
 	enum class ObjectKind
 	{
-		GoDeepLogo
+		GoDeepLogo,
+		Player
 	};
 
 public:

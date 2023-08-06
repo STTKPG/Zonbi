@@ -1,31 +1,42 @@
 #ifndef OBJECTMANAGER_H
 #define OBJECTMANAGER_H
 
-#include "ObjectFactory.h"
 #include <list>
+#include "ObjectBase.h"
+#include "Player.h"
+#include "../Others/Vector.h"
+
 class ObjectManager
 {
 public:
 	static ObjectManager* Instance()
 	{
-		ObjectManager instance;
+		static ObjectManager instance;
 		return &instance;
 	}
 
-	void Entry(ObjectBase::ObjectKind kind, Position2D top = Position2D(0,0),Position2D under = Position2D(0,0));
+	void Entry(ObjectBase::ObjectKind kind, int modelhandle, Vector pos, Vector rotate);
 	void Update();
 	void Draw();
 	void Delete();
 public:
 	~ObjectManager() {}
-
+	Vector GetPlayerPos()
+	{
+		if (PlayerIns == nullptr)
+		{
+			return Vector(0, 0, 0);
+		}
+		return PlayerIns->Pos;
+	}
 
 private:
-	ObjectManager() {}
+	ObjectManager() : PlayerIns(nullptr){}
 	ObjectManager(const ObjectManager& ins) = delete;
 
 private:
 	std::list<ObjectBase*> Objects;
+	Player* PlayerIns;
 };
 
 #endif // !OBJECTMANAGER_H

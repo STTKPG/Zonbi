@@ -1,14 +1,13 @@
 #include "ObjectManager.h"
+#include "ObjectFactory.h"
 
-void ObjectManager::Entry(ObjectBase::ObjectKind kind, Position2D top, Position2D under)
+void ObjectManager::Entry(ObjectBase::ObjectKind kind, int modelhandle, Vector pos, Vector rotate)
 {
 	switch (kind)
 	{
-	case::ObjectBase::ObjectKind::GoDeepLogo:
-		Objects.push_back(ObjectFactory::Instance()->CreateGoDeepLogo(top, under, kind));
-		break;
-
-	default:
+	case ObjectBase::ObjectKind::Player:
+		PlayerIns = ObjectFactory::CreatePlayer(modelhandle, pos, rotate);
+		Objects.push_back(PlayerIns);
 		break;
 	}
 }

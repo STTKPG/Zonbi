@@ -1,15 +1,17 @@
 #ifndef SCENEBASE_H
 #define SCENEBASE_H
 
-#include "../Sources/Others/GraphManager.h"
-#include "../Sources/Object/ObjectManager.h"
+#include "../Others/GraphManager.h"
+#include "../Others/ModelManager.h"
+#include "../Object/ObjectManager.h"
 
 class SceneBase
 {
 public:
 	enum class SceneKind
 	{
-		Title
+		Title,
+		Test
 	};
 
 public:
@@ -21,7 +23,7 @@ public:
 
 public:
 	//各Objectのアップデートを回す
-	virtual SceneKind Update();
+	virtual SceneKind Update() = 0;
 	//各Objectの描画を回す
 	virtual void Draw();
 };

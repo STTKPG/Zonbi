@@ -3,6 +3,8 @@
 
 #include "SceneBase.h"
 #include "Title.h"
+#include "TestScene.h"
+
 class SceneFactory
 {
 public:
@@ -14,6 +16,9 @@ public:
 		case SceneBase::SceneKind::Title:
 			return new Title;
 			break;
+		case SceneBase::SceneKind::Test:
+			return new Test;
+			break; 
 		default:
 			break;
 		}
