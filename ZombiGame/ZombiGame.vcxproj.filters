@@ -68,6 +68,15 @@
     <ClCompile Include="Sources\Object\O_Wall.cpp">
       <Filter>Source\Object</Filter>
     </ClCompile>
+    <ClCompile Include="Sources\Object\Door.cpp">
+      <Filter>Source\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Object\Arch_Door.cpp">
+      <Filter>Source\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Object\O_Wall_Arch.cpp">
+      <Filter>Source\Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\Scene\SceneBase.h">
@@ -130,6 +139,15 @@
     </ClInclude>
     <ClInclude Include="Sources\Others\DefineInstantVariable.h">
       <Filter>Source\Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Object\Door.h">
+      <Filter>Source\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Object\Arch_Door.h">
+      <Filter>Source\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Object\O_Wall_Arch.h">
+      <Filter>Source\Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
