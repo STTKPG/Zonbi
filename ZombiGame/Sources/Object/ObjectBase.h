@@ -7,7 +7,13 @@ public:
 	enum class ObjectKind
 	{
 		GoDeepLogo,
-		Player
+		Player,
+		Wall,
+		Floor,
+		Door,
+		Arch_Door,
+		Wall_Arch
+
 	};
 
 public:

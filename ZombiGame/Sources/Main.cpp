@@ -10,12 +10,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	{
 		return -1;			// エラーが起きたら直ちに終了
 	}
-	SetUseLighting(FALSE);
+	//SetUseLighting(FALSE);
 	SetDrawScreen(DX_SCREEN_BACK);
 	SetGraphMode(200, 200, 64);
+	ChangeLightTypeDir(VGet(0, -1.0f, -1.0f));
 	while (CheckHitKey(KEY_INPUT_RETURN) == 0 || ProcessMessage() == -1)
 	{
-		DrawLine3D(VGet(0, 0, 0), VGet(1000, 0, 0), GetColor(255, 0, 0));
 		ScreenFlip();
 		ClearDrawScreen();
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -142,9 +142,11 @@
     <ClCompile Include="Sources\Camera\Camera.cpp" />
     <ClCompile Include="Sources\Camera\CameraManager.cpp" />
     <ClCompile Include="Sources\Main.cpp" />
+    <ClCompile Include="Sources\Object\Floor.cpp" />
     <ClCompile Include="Sources\Object\Object3DBase.cpp" />
     <ClCompile Include="Sources\Object\ObjectFactory.cpp" />
     <ClCompile Include="Sources\Object\ObjectManager.cpp" />
+    <ClCompile Include="Sources\Object\O_Wall.cpp" />
     <ClCompile Include="Sources\Object\Player.cpp" />
     <ClCompile Include="Sources\Others\GraphManager.cpp" />
     <ClCompile Include="Sources\Others\ModelManager.cpp" />
@@ -157,11 +159,15 @@
     <ClInclude Include="Sources\Camera\Camera.h" />
     <ClInclude Include="Sources\Camera\CameraFactory.h" />
     <ClInclude Include="Sources\Camera\CameraManager.h" />
+    <ClInclude Include="Sources\Object\Floor.h" />
     <ClInclude Include="Sources\Object\Object3DBase.h" />
     <ClInclude Include="Sources\Object\ObjectBase.h" />
     <ClInclude Include="Sources\Object\ObjectFactory.h" />
     <ClInclude Include="Sources\Object\ObjectManager.h" />
+    <ClInclude Include="Sources\Object\O_Wall.h" />
     <ClInclude Include="Sources\Object\Player.h" />
+    <ClInclude Include="Sources\Object\Wall.h" />
+    <ClInclude Include="Sources\Others\DefineInstantVariable.h" />
     <ClInclude Include="Sources\Others\GraphManager.h" />
     <ClInclude Include="Sources\Others\ModelManager.h" />
     <ClInclude Include="Sources\Others\Position2D.h" />

@@ -9,6 +9,12 @@ void ObjectManager::Entry(ObjectBase::ObjectKind kind, int modelhandle, Vector p
 		PlayerIns = ObjectFactory::CreatePlayer(modelhandle, pos, rotate);
 		Objects.push_back(PlayerIns);
 		break;
+	case ObjectBase::ObjectKind::Floor:
+		Objects.push_back(ObjectFactory::CreateThings(kind, modelhandle, pos, rotate));
+		break;
+	case ObjectBase::ObjectKind::Wall:
+		Objects.push_back(ObjectFactory::CreateThings(kind, modelhandle, pos, rotate));
+		break;
 	}
 }
 

@@ -62,6 +62,12 @@
     <ClCompile Include="Sources\Camera\Camera.cpp">
       <Filter>Source\Camera</Filter>
     </ClCompile>
+    <ClCompile Include="Sources\Object\Floor.cpp">
+      <Filter>Source\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Object\O_Wall.cpp">
+      <Filter>Source\Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\Scene\SceneBase.h">
@@ -114,6 +120,16 @@
     </ClInclude>
     <ClInclude Include="Sources\Camera\CameraFactory.h">
       <Filter>Source\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Object\Wall.h" />
+    <ClInclude Include="Sources\Object\Floor.h">
+      <Filter>Source\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Object\O_Wall.h">
+      <Filter>Source\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Others\DefineInstantVariable.h">
+      <Filter>Source\Others</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

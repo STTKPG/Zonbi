@@ -29,11 +29,11 @@ void Player::Update()
 	}
 	if (CheckHitKey(KEY_INPUT_A) == 1)
 	{
-		DegreeY++;
+		DegreeY += 3;
 	}
 	if (CheckHitKey(KEY_INPUT_D) == 1)
 	{
-		DegreeY--;
+		DegreeY -= 3;
 	}
 
 }
