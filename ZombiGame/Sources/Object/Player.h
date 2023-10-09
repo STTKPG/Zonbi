@@ -6,7 +6,7 @@
 class Player : public Object3DBase
 {
 public:
-	Player(int modelhandle, Vector pos, Vector rotate) : Object3DBase(ObjectKind::Player, modelhandle, pos, rotate), DegreeY(0){}
+	Player(int modelhandle, Vector pos, Vector rotate, Vector scale) : Object3DBase(ObjectKind::Player, modelhandle, pos, rotate, scale), DegreeY(0){}
 	~Player(){}
 
 protected:

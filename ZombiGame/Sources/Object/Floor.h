@@ -6,7 +6,7 @@
 class Floor : public Object3DBase
 {
 public:
-	Floor(int modelhundle , Vector pos , Vector rotate):Object3DBase(ObjectKind::Floor , modelhundle , pos , rotate){}
+	Floor(int modelhundle , Vector pos , Vector rotate, Vector scale):Object3DBase(ObjectKind::Floor , modelhundle , pos , rotate, scale){}
 	~Floor(){}
 
 protected:

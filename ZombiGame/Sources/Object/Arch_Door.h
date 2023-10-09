@@ -6,7 +6,7 @@
 class Arch_Door : public Object3DBase
 {
 public:
-	Arch_Door(int modelhundle, Vector pos, Vector rotate) :Object3DBase(ObjectKind::Floor, modelhundle, pos, rotate) {}
+	Arch_Door(int modelhundle, Vector pos, Vector rotate, Vector scale) :Object3DBase(ObjectKind::Arch_Door, modelhundle, pos, rotate, scale) {}
 	~Arch_Door() {}
 
 protected:

@@ -6,7 +6,7 @@
 class Door : public Object3DBase
 {
 public:
-	Door(int modelhundle, Vector pos, Vector rotate) :Object3DBase(ObjectKind::Floor, modelhundle, pos, rotate){}
+	Door(int modelhundle, Vector pos, Vector rotate, Vector scale) :Object3DBase(ObjectKind::Door, modelhundle, pos, rotate, scale){}
 	~Door(){}
 
 protected:

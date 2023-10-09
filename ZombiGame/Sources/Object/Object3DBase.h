@@ -8,7 +8,7 @@
 class Object3DBase : public ObjectBase
 {
 public:
-	Object3DBase(ObjectBase::ObjectKind kind,int modelhandle,Vector pos,Vector rotate):ObjectBase(kind), ModelHandle(modelhandle), Pos(pos), Rotate(rotate) {}
+	Object3DBase(ObjectBase::ObjectKind kind,int modelhandle,Vector pos,Vector rotate, Vector scale):ObjectBase(kind), ModelHandle(modelhandle), Pos(pos), Rotate(rotate), Scale(scale) {}
 	~Object3DBase(){}
 
 public:
@@ -18,6 +18,7 @@ public:
 public:
 	Vector Pos;
 	Vector Rotate;
+	Vector Scale;
 	int ModelHandle;
 };
 

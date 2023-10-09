@@ -15,7 +15,7 @@ public:
 		return &instance;
 	}
 
-	void Entry(ObjectBase::ObjectKind kind, int modelhandle, Vector pos, Vector rotate);
+	void Entry(ObjectBase::ObjectKind kind, int modelhandle, Vector pos, Vector rotate, Vector scale);
 	void Update();
 	void Draw();
 	void Delete();

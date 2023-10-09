@@ -6,7 +6,7 @@
 class Wall : public Object3DBase
 {
 public:
-	Wall(int modelhundle,Vector pos,Vector rotate):Object3DBase(ObjectKind::Wall,modelhundle,pos,rotate){}
+	Wall(int modelhundle,Vector pos,Vector rotate, Vector scale):Object3DBase(ObjectKind::Wall,modelhundle,pos,rotate,scale){}
 	~Wall(){}
 
 protected:
