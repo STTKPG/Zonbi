@@ -77,6 +77,9 @@
     <ClCompile Include="Sources\Object\O_Wall_Arch.cpp">
       <Filter>Source\Object</Filter>
     </ClCompile>
+    <ClCompile Include="Sources\Others\ResctColl.cpp">
+      <Filter>Source\Others</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\Scene\SceneBase.h">
@@ -148,6 +151,9 @@
     </ClInclude>
     <ClInclude Include="Sources\Object\O_Wall_Arch.h">
       <Filter>Source\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Others\RectColl.h">
+      <Filter>Source\Others</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

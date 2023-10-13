@@ -153,6 +153,7 @@
     <ClCompile Include="Sources\Object\Player.cpp" />
     <ClCompile Include="Sources\Others\GraphManager.cpp" />
     <ClCompile Include="Sources\Others\ModelManager.cpp" />
+    <ClCompile Include="Sources\Others\ResctColl.cpp" />
     <ClCompile Include="Sources\Scene\SceneBase.cpp" />
     <ClCompile Include="Sources\Scene\SceneManager.cpp" />
     <ClCompile Include="Sources\Scene\TestScene.cpp" />
@@ -177,6 +178,7 @@
     <ClInclude Include="Sources\Others\GraphManager.h" />
     <ClInclude Include="Sources\Others\ModelManager.h" />
     <ClInclude Include="Sources\Others\Position2D.h" />
+    <ClInclude Include="Sources\Others\RectColl.h" />
     <ClInclude Include="Sources\Others\Vector.h" />
     <ClInclude Include="Sources\Scene\SceneBase.h" />
     <ClInclude Include="Sources\Scene\SceneFactory.h" />
